@@ -1,0 +1,115 @@
+section{
+  background-color: #f1e8e1;
+  height: 100vh;
+  display: flex;
+}
+
+.box1{
+  background: #ffffff;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  gap: 1em;
+  overflow: hidden ;
+  max-width: 650px;
+}
+
+.imagem-box{
+  border-radius: 10px;
+  position: relative;
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.imagem-box img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.texto{
+  text-align: left;
+  margin-top: 38px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+
+.texto h1{
+  font-family:"Montserrat ExtraLight";
+  font-size: 14px;
+}
+
+.texto h3{
+  margin-top: 10px;
+  margin-right: 50px;
+  font-size: 40px;
+  max-width: 14ch;
+}
+
+.texto p{
+  margin-top: 25px;
+  margin-right: 50px;
+  font-size: 15px;
+  max-width: 40ch;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: sans-serif;
+
+}
+
+.texto button{
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #3d8067;
+  color: white;
+  font-size: 17px;
+  border-color: transparent;
+  width: calc(90% - 2em);
+  height: calc(10%);
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  gap: .5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.preco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.preco p:first-child{
+  font-size: 40px;
+  color: rgb(59, 122, 98);
+  font-family: Futura-Bold;
+  font-weight: bold;
+}
+
+.preco p:last-child{
+  font-size: 12px;
+  text-decoration-line:line-through
+}
+
+.texto .preco p:first-child{
+  margin-right: 10px;
+}
+
+button:hover{
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+button{
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);   transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+
